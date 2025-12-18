@@ -1,0 +1,69 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+         // 配置1：一键启动+调试（推荐，无需手动 flutter run）
+        {
+            "name": "Flutter Debug (iPhone)",
+            "type": "dart",
+            "request": "launch", // 直接启动+自动附加调试
+            "program": "lib/main.dart",
+            "args": [
+                "-d", "00008030-001110623C31402E", // 替换为你的「设备 ID」（优先用 ID，避免设备名中文问题）
+                // 或用设备名："-d", "浦仁松的iPhone"（中文需准确，建议用 ID）
+                "--debug"
+            ],
+            "flutterMode": "debug",
+            "console": "terminal"
+        },
+        // 配置2：手动 flutter run 后，附加调试（备用）
+        {
+            "name": "Dart: Attach to iPhone",
+            "type": "dart",
+            "request": "attach",
+            "deviceId": "00008030-001110623C31402E", // 替换为你的设备 ID
+            "program": "lib/main.dart",
+            "flutterMode": "debug"
+        },
+        {
+            "name": "flutter_application_1",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_application_1 (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_application_1 (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_application_1",
+            "cwd": "flutter_application_1",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_application_1 (profile mode)",
+            "cwd": "flutter_application_1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_application_1 (release mode)",
+            "cwd": "flutter_application_1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
